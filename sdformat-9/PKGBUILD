@@ -11,10 +11,10 @@ license=('Apache')
 depends=('boost' 'tinyxml' 'ignition-math=6' 'python-psutil' 'urdfdom')
 makedepends=('cmake' 'doxygen' 'ignition-cmake=2' 'ignition-tools=1' 'ruby' 'ruby-rexml')
 provides=('sdformat=9')
-source=("${pkgname}-${pkgver}.tar.gz::https://github.com/osrf/sdformat/archive/sdformat9_${pkgver}.tar.gz")
-sha256sums=('6aabb4e08073d506f27a8e801eb175cca9a1c938e4fbff6b30f0b2ddf52a9b5e')
+source=("${pkgname}-${pkgver}::git+https://github.com/gazebosim/sdformat.git#branch=sdf9")
+sha256sums=('SKIP')
 
-_dir="sdformat-sdformat9_${pkgver}"
+_dir="${pkgname}-${pkgver}"
 
 build() {
   cd "${srcdir}/${_dir}"
